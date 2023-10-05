@@ -1,9 +1,12 @@
 <template>
+  <div id="b">
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/" id="a">Inicio</router-link> 
+    <router-link to="/categorias"  id="a">Categorias</router-link> 
+    <router-link to="/buscar"  id="a">Buscar</router-link> 
   </nav>
   <router-view/>
+</div>
 </template>
 
 <style>
@@ -17,14 +20,38 @@
 
 nav {
   padding: 30px;
+ 
+  position: relative;
+  background-color: aquamarine;
+  height:10px;
+  border:20px solid rgb(80, 50, 100, 10);
+  border-radius:100px;
+
 }
 
-nav a {
+nav a{
+  
   font-weight: bold;
-  color: #2c3e50;
+  color: #c73ce0;
+  
+  
 }
+
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #070505;
+ 
 }
+
+#a{
+  padding: 100px;
+}
+#b{
+  background-color:  aqua ;
+  height: 850px;
+  border-top-right-radius: 53px;
+  border-top-left-radius: 53px;
+}
+
+
 </style>
